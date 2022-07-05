@@ -1,3 +1,4 @@
+const Captain = require("../models/Captains");
 const Planet = require("../models/Planet")
 
 module.exports = {
@@ -10,6 +11,15 @@ module.exports = {
         const planets = await Planet.findAll();
 
         return res.json(planets);
+    },
+    async captains(req, res) {
+        const { id } = req.params
+
+        let details = await Planet.findByPk(id, {
+            include: Captain
+        });
+        return res.json(details);
+
     },
     async put(req, res) {
         const { name, size, position } = req.body;

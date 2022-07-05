@@ -9,6 +9,7 @@ routes.post('/planets', PlanetController.store);
 routes.get("/planets", PlanetController.index);
 routes.put("/planets/:id", PlanetController.put);
 routes.delete("/planets/:id", PlanetController.delete);
+routes.get("/planet/:id/captains", PlanetController.captains);
 
 routes.post("/planet/:planetId/satelites", SateliteController.store);
 routes.get("/planet/:planetId/satelites", SateliteController.index);
@@ -18,15 +19,15 @@ routes.delete("/planet/:planetId/satelites/:sateliteId", SateliteController.dele
 routes.post('/captains', CaptainController.store);
 routes.get("/captains", CaptainController.index);
 routes.get("/captain/:id", CaptainController.details);
-routes.put("/captains/:id", CaptainController.put);
-routes.delete("/captains/:id", CaptainController.delete);
+routes.put("/captain/:id", CaptainController.put);
+routes.delete("/captain/:id", CaptainController.delete);
 
 routes.post('/captain/newspaceship/:id', SpaceshipController.store);
 
 routes.get("/spaceships", SpaceshipController.index);
-routes.get("/spaceships/:id", SpaceshipController.findId);
-routes.put("/spaceships/:id", SpaceshipController.put);
-routes.delete("/spaceships/:id", SpaceshipController.delete);
+routes.get("/spaceship/:id", SpaceshipController.findId);
+routes.put("/spaceship/:id", SpaceshipController.put);
+routes.delete("/spaceship/:id", SpaceshipController.delete);
 
 
 
