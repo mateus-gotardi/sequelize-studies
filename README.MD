@@ -1,6 +1,7 @@
 # Projeto de estudos em SQL
 API desenvolvida como estudos, acompanhando video aulas e adicionando features extras
-sistema de CRUD seguindo essa projeção e relação de tabelas.
+
+Sistema de CRUD seguindo essa projeção e relação de tabelas.
 ![image](https://user-images.githubusercontent.com/98918812/177413339-29d1dbf0-a6b0-40c5-ba7f-c06113c15a63.png)
 
     
